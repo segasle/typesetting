@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.container {
+    display: block;
+    background: #e38a7e;
+    width: 720px;
+    height: 440px;
+}
+
+.center {
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 35px 0;
+}
+
+.meun {
+    ul {
+        display: table;
+        margin: auto;
+        border-radius: 10px;
+        background: #c24c3d;
+        li {
+            padding: 0 10px;
+            list-style: none;
+            float: left;
+            line-height: 25px;
+            position: relative;
+            &:nth-child(2) {
+                background: #aa463a;
+            }
+            a {
+                color: aliceblue;
+                font-size: 13px;
+                text-decoration: none;
+            }
+            .circle {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: #fff;
+                display: block;
+            }
+        }
+    }
+}
+
+.header {
+    margin: 20px 0 0 0;
+    h1 {
+        text-align: center;
+        color: aliceblue;
+        font-size: 40px;
+    }
+}
+
+.content {
+    width: 250px;
+    display: block;
+    margin: 10px auto;
+    border-top-width: thick;
+    border-top-style: dotted;
+    border-color: #9e3322;
+    padding: 10px 0px;
+    &:after {
+        width: 150px;
+        border-bottom: thick dotted #9e3322;
+        display: block;
+        margin: auto;
+        padding-top: 10px
+    }
+    p {
+        color: aliceblue;
+        padding: 0 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.button {}
+
+.button,
+.button1 {
+    margin: 12px auto;
+    display: block;
+    width: 120px;
+    border: 2px solid #fff;
+    line-height: 30px;
+    color: aliceblue;
+    padding: 0 10px;
+    background: #d75849;
+    box-shadow: 2px 2px 2px 0px black;
+    text-align: center;
+}
+
+.button1 {
+    width: 80px;
+}

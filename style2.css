@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background:  #5d5f60;
+    width: 100%;
+    min-width: 700px;
+    height: 100%;
+    font-weight: normal;
+    font-family: inherit;
+    font-size: 15px;
+    color: #000000;
+}
+#maket {
+    width: 100%;
+    height: 100%;
+}
+
+.heder {
+    background: #c18300;
+    width: 100%;
+    min-width: 1024px;
+    height: 150px;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    
+}
+
+.slang {
+    font-size: 80px;
+    font-weight: inherit;
+    font-family: cursive;
+    color: #ECEBF5;
+    margin: 20px 0px 20px 20px;
+    float: left;    
+}
+
+.checker {
+    background: #b65b00;
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin: 50px 0px 20px 20px;
+    position: relative;
+}
+
+.one {
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 15px;
+    box-shadow: 0 0 15px;
+    border: 2px solid #6b6974;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.two {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #6b6974;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.three {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid #6b6974;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+
+.four {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border: 2px solid #6b6974;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.five {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    border: 2px solid #6b6974;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.color_black {
+    background: #000;
+}
+
+.color_white {
+    background: #fff
+}
+
+.white {
+    background: #F5D179;
+    width: 12.5%;
+    height: 100px;
+    float: left;
+}
+
+.black {
+    background: #000;
+    width: 12.5%;
+    height: 100px;
+    float: left;
+ }
+
+.board {
+    width: 100%;
+    position: relative;
+}

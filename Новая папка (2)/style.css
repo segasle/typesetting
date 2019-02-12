@@ -1,0 +1,798 @@
+@import "asset/fonts/stylesheet.css";
+body {
+  font-family: 'AdihausDIN';
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+div:before,
+div:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+  padding: 0 15px;
+}
+.button {
+  position: relative;
+  background: #eeeeee;
+  padding: 10px 23px 13px 23px;
+  color: #fff;
+  display: table;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+.button:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -10px;
+  border: 10px solid transparent;
+}
+.button-top:after {
+  bottom: 100%;
+  border-bottom-color: #eeeeee;
+}
+.button-bottom:after {
+  top: 100%;
+  border-top-color: #eeeeee;
+}
+.button:disabled {
+  background: #ccc;
+  color: #e1e1e1;
+  cursor: no-drop;
+  border-color: #ccc;
+}
+.button-top:disabled:after {
+  border-bottom-color: #ccc;
+}
+.button-bottom:disabled:after {
+  border-top-color: #ccc;
+}
+.header {
+  padding-top: 30px;
+  padding-bottom: 165px;
+  background: #99938c url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) 50% 0 / cover no-repeat;
+}
+.header__logos {
+  display: table;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 94px;
+}
+.header__logos-cell {
+  display: table-cell;
+  padding: 0 24px;
+}
+.header__logos-cell:first-child {
+  border-right: 1px solid #0e75bd;
+}
+.header__title {
+  font-family: 'AdihausDIN Cn';
+  color: #fff;
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -6px;
+  text-shadow: 0 0 85px rgba(0, 0, 0, 0.75);
+}
+.news__single {
+  padding-bottom: 50px;
+}
+.news__date {
+  /*background: @color-blue;*/
+  background: #0e75bd;
+  background: -moz-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: -webkit-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: linear-gradient(135deg, #32ca68 0%, #0e75bd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=1);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  display: table;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 41px;
+}
+.news__date:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid #fff;
+  bottom: 0;
+  right: 0;
+  border-left-color: #d52228;
+  border-top-color: #d52228;
+}
+.news__date-box {
+  border: 2px solid #fff;
+  padding: 10px;
+}
+.news__day {
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: .85;
+  font-family: 'AdihausDIN Cn';
+}
+.news__month {
+  line-height: 1;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.news__content {
+  text-align: center;
+  font-size: 20px;
+  /*font-family: 'AdihausDIN Cn';*/
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 46px;
+}
+.news__button {
+  /*background: @color-blue;*/
+  background: #0e75bd;
+  background: -moz-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: -webkit-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: linear-gradient(135deg, #32ca68 0%, #0e75bd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=1);
+}
+.news__button:after {
+  border-top-color: #0e75bd;
+}
+.quote {
+  background: #99938c url(images/quote.jpg) 50% 50% / cover no-repeat;
+  padding: 350px 0 300px 0;
+}
+.quote__container {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+  padding: 0 15px;
+}
+@media (max-width: 920px) {
+  .quote__container {
+    padding: 0 20px;
+  }
+}
+.quote__box {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+.quote__content {
+  text-align: center;
+  background: #fff;
+  padding: 55px 55px 75px 55px;
+  font-size: 20px;
+  /*font-family: 'AdihausDIN Cn';*/
+}
+.quote__button {
+  background: #d52228;
+  margin-top: -21px;
+}
+.quote__button:after {
+  border-top-color: #d52228;
+}
+.quote__left-border,
+.quote__right-border {
+  /*background: @color-blue;*/
+  background: #0e75bd;
+  background: -moz-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: -webkit-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: linear-gradient(135deg, #32ca68 0%, #0e75bd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=1);
+  z-index: -1;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 60px;
+}
+.quote__left-border:before,
+.quote__right-border:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #d52228;
+}
+.quote__left-border {
+  transform: rotate(180deg);
+}
+.quote__right-border {
+  left: auto;
+  top: -20px;
+  right: -20px;
+}
+.what {
+  background: #99938c url(images/what.jpg) 50% 50% / cover no-repeat;
+  padding-top: 90px;
+  padding-bottom: 0px;
+  position: relative;
+}
+.what_gradient:before {
+  background: transparent;
+  background: -moz-linear-gradient(-45deg, #32ca68 0%, transparent 100%);
+  background: -webkit-linear-gradient(-45deg, #32ca68 0%, transparent 100%);
+  background: linear-gradient(135deg, #32ca68 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=1);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.what__space {
+  height: 140px;
+}
+.what__container {
+  position: relative;
+  z-index: 1;
+}
+.what__title {
+  font-family: 'AdihausDIN Cn';
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.what__subtitle {
+  /*font-family: 'AdihausDIN Cn';*/
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+}
+.what__music {
+  padding: 62px 0;
+  float: right;
+}
+.what__player {
+  position: relative;
+  background: #d52228;
+  padding: 10px 23px 13px 23px;
+  color: #fff;
+  display: table;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1;
+  border-radius: 25px;
+}
+.what__player-title {
+  color: #fff;
+}
+.what__player-button {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-left-color: #fff;
+  float: left;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+.what__player-text {
+  float: left;
+}
+.what__row {
+  margin-bottom: 90px;
+  /*font-family: 'AdihausDIN Cn';*/
+  line-height: 1.3;
+}
+.what__icon {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.what__content {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.what__button {
+  /*background: @color-blue;*/
+  background: #0e75bd;
+  background: -moz-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: -webkit-linear-gradient(-45deg, #32ca68 0%, #0e75bd 100%);
+  background: linear-gradient(135deg, #32ca68 0%, #0e75bd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@startColor', endColorstr='@endColor', GradientType=1);
+}
+.what__button:after {
+  border-top-color: #0e75bd;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row > div {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-1 {
+  width: 8.3334%;
+}
+.col-xs-2 {
+  width: 16.6667%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-4 {
+  width: 33.3334%;
+}
+.col-xs-5 {
+  width: 41.6667%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-7 {
+  width: 58.3334%;
+}
+.col-xs-8 {
+  width: 66.6667%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-10 {
+  width: 83.3334%;
+}
+.col-xs-11 {
+  width: 91.6667%;
+}
+.col-xs-12 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-sm-1 {
+    width: 8.3334%;
+  }
+  .col-sm-2 {
+    width: 16.6667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3334%;
+  }
+  .col-sm-5 {
+    width: 41.6667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3334%;
+  }
+  .col-sm-8 {
+    width: 66.6667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3334%;
+  }
+  .col-sm-11 {
+    width: 91.6667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1 {
+    width: 8.3334%;
+  }
+  .col-md-2 {
+    width: 16.6667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3334%;
+  }
+  .col-md-5 {
+    width: 41.6667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3334%;
+  }
+  .col-md-8 {
+    width: 66.6667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3334%;
+  }
+  .col-md-11 {
+    width: 91.6667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    width: 8.3334%;
+  }
+  .col-lg-2 {
+    width: 16.6667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3334%;
+  }
+  .col-lg-5 {
+    width: 41.6667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3334%;
+  }
+  .col-lg-8 {
+    width: 66.6667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3334%;
+  }
+  .col-lg-11 {
+    width: 91.6667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+.icon-text__icon {
+  background: url(images/arrow.png) 50% 50% no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.icon-text__icon-timer {
+  background-image: url(images/timer.png);
+}
+.icon-text__icon-run {
+  background-image: url(images/run.png);
+}
+.icon-text__icon-flag {
+  background-image: url(images/flag.png);
+}
+.icon-text__icon-plus {
+  background-image: url(images/plus.png);
+}
+.icon-text__text {
+  /*font-family: 'AdihausDIN Cn';*/
+  font-size: 20px;
+  text-align: center;
+}
+.icon-text__text p {
+  margin: 0;
+}
+.icon-text_staff .icon-text__icon {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 5px;
+  background-image: url(images/staff.png);
+}
+.icon-text_staff .icon-text__text {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.icon-text_big .icon-text__icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 21px;
+}
+.icon-text_big .icon-text__text {
+  font-size: 20px;
+  /*font-family: 'AdihausDIN Cn';*/
+  line-height: 1.1;
+  color: #fff;
+}
+.icon-text_wide .icon-text__icon {
+  margin-bottom: 13px;
+}
+.icon-text_wide .icon-text__text {
+  font-size: 21px;
+  color: #fff;
+}
+.icon-text_wide .icon-text__text p {
+  margin: 0 0 1em 0;
+  line-height: 1;
+}
+.map {
+  background: url(images/map.png) 50% 70px no-repeat, #0b66a3 url(images/map_bg.jpg) 50% 50% / cover no-repeat;
+  padding: 90px 0 15px 0;
+}
+.map__title {
+  font-family: 'AdihausDIN Cn';
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.map__subtitle {
+  /*font-family: 'AdihausDIN Cn';*/
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1;
+}
+.map__space {
+  height: 490px;
+}
+.socials {
+  display: table;
+  margin: auto;
+}
+.socials__text {
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+}
+.socials__links {
+  margin: 50px auto;
+  display: table;
+}
+.socials__link {
+  background: url(images/socials.png) 50% 50% no-repeat;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 0 10px;
+  display: block;
+}
+.socials__link-instagram {
+  background-position: 0 0;
+  width: 40px;
+  height: 40px;
+}
+.socials__link-vk {
+  background-position: -40px 0;
+  width: 40px;
+  height: 40px;
+}
+.socials__link-twitter {
+  background-position: -80px 0;
+  width: 40px;
+  height: 40px;
+}
+.socials__link-facebook {
+  background-position: -120px 0;
+  width: 40px;
+  height: 40px;
+}
+.socials__link-odnoklassniki {
+  background-position: -160px 0;
+  width: 40px;
+  height: 40px;
+}
+.register {
+  padding: 50px;
+}
+.register__title {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1;
+  font-family: 'AdihausDIN Cn';
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin: 0 0 35px 0px;
+}
+.register__subtitle {
+  text-align: center;
+  font-weight: 500;
+  /*font-family: 'AdihausDIN Cn';*/
+  font-size: 20px;
+  color: #d52228;
+}
+.register__label {
+  line-height: 1;
+  color: #3f86c5;
+  text-align: center;
+  font-weight: 500;
+  /*font-family: 'AdihausDIN Cn';*/
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.register__row {
+  display: table;
+  margin: auto;
+}
+.register__col {
+  float: left;
+}
+.register__form-group {
+  padding: 0 10px;
+}
+.register__form-control {
+  border: 1px solid transparent;
+  background: #eee;
+  min-width: 240px;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 20px;
+  /*font-family: 'AdihausDIN Cn';*/
+}
+.register__content {
+  margin-bottom: 30px;
+}
+.register__button {
+  background: #d52228;
+  width: 100%;
+  max-width: 240px;
+  margin-top: 30px;
+}
+.register__button:after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: #d52228;
+}
+.register__payment-info {
+  display: table;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+.register__payment-title {
+  margin: 0;
+}
+.register__payment-content {
+  padding: 1px;
+}
+.themodal > * {
+  -webkit-transform: translateZ(0px);
+}
+.themodal-lock {
+  /* when modal is opened we're removing scrollbars from the main content */
+  overflow: hidden;
+}
+.themodal-overlay {
+  /* overlay will stay fixed and will take all the space available */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100000;
+  /* if modal content doesn't fit inside the overlay, display scrollbars */
+  overflow: auto;
+  /* allow one-finger iPad scrolling */
+  -webkit-overflow-scrolling: touch;
+  background: rgba(0, 0, 0, 0.6);
+  /* IE6–IE8 */
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);*/
+  zoom: 1;
+}
+.modal {
+  background: #fff;
+  margin: 50px auto auto auto;
+  width: 100%;
+  max-width: 500px;
+  display: table;
+  padding: 15px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.form__group {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+}
+.form__label {
+  display: table-cell;
+  width: 50%;
+  line-height: 1;
+  color: #3f86c5;
+  font-weight: 500;
+  /*font-family: 'AdihausDIN Cn';*/
+  font-size: 20px;
+  cursor: pointer;
+}
+.form__control {
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 20px;
+  /*font-family: 'AdihausDIN Cn';*/
+  border: 0 solid transparent;
+  padding: 5px;
+}
+.form__control:focus {
+  outline: none;
+  background: #f7f7f7;
+}
+.form__hint {
+  font-size: 0.8em;
+  color: #ccc;
+  font-weight: 300;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  display: block;
+}
+.form__button {
+  margin-top: 20px;
+  background: #0e75bd;
+  border-color: #0e75bd;
+}
+.form__button:after {
+  /*border-top-color: @color-blue;*/
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+}
+.messages__error {
+  color: #f00;
+  background: #ffd1d5;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: .8em;
+}
+.form-error {
+  color: #f00;
+  background: #ffd1d5;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: .8em;
+}
+.hidden {
+  display: none;
+}

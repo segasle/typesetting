@@ -1,0 +1,109 @@
+body {
+	font: 16px / 1 sans-serif;
+	padding: 0;
+	margin: 0;
+}
+.menu {
+	@gitter: 5px;
+	@color_1:#f1e796;
+	@color_2:#d578b9;
+	@color_3:#bfd7ee;
+
+	/* Описание блока, содержащего меню */
+	background: @color_3;
+
+	ul {
+		/* Изначальное описание каждого списка(он же является отдельным меню) */
+		list-style: none;
+		padding: 0;
+		margin: auto;
+		display: table;
+
+		&:before, &:after {
+			/* Псевдоблоки, предотвращающие калапс высоты из-за float */
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		li {
+			/* Описание всех элементов меню, говорим, что все пункты должны выстроиться в строку */
+            background: red;
+            line-height: 2px;
+			float: left;
+			position: relative;
+
+
+			&:hover > a {
+				/* Указание свойств ссылки для пункта, который является родительским, по отношению к тому, на который
+				 наведен курсор - благодаря этому мы подкрашиваем родительские элементы, внутри которых находимся */
+				
+				color: @color_2;
+			}
+
+			 & > a:hover  {
+				 /* окрашивание ссылки на которую наведен курсор */
+				background: @color_1;
+				color: @color_2;
+			}
+
+
+			a {
+				/* Ссылки внутри меню - именно для ссылок задается внешний вид пункта меню! */
+				position: relative;
+				display: block;
+				line-height: 1;
+				padding: @gitter @gitter*2;
+				text-decoration: none;
+				color: @color_1;
+				background: @color_2;
+
+				&:after {
+					/* описание стрелочки, которая должна выводиться у тех пунктов меню, у которых есть вложения.
+					 По умолчанию стрелка скрыта. */
+					content: '';
+					position: relative;
+					width: 0;
+					height: 0;
+					border-style:solid ;
+					border-color: transparent;
+					border-width: .3em 0 .3em .4em;
+					border-left-color: @color_3;
+					margin-left: 10px;
+					display: none;
+				}
+			}
+
+			ul + a:after {
+				/* отображение стрелочки в пунктах, в которых есть вложение */
+				display: inline-block;
+			}
+
+			ul {
+				/* Любое вложенное меню - по умолчанию скрыто */
+				display: none;
+				width: 250px;
+				position: absolute;
+				left: 0;
+				top: 100%;
+
+				li {
+					/* Пункт меню во вложенном меню - пункты уже не должны выстаиваться друг за другом, а должны идти столбиком */
+					float: none;
+					width: 100%;
+
+					ul {
+ 						/* Выпадающее меню во вложенном пункте должно позиционироваться параллельно пункту меню */
+						top:0;
+						left: 100%;
+					}
+				}
+			}
+
+			&:hover > ul {
+				/* отображение вложенного меню того пункта, на который наведен курсор */
+				display: block;
+			}
+		}
+	}
+}

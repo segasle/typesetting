@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Документ без названия</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: #DFDFDF;
+	}
+	ul{
+		position: relative;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	ul li {
+		margin: 0 -7px 0 0;
+		display: inline-block; 
+		background: #F10004;
+	}
+	a {
+		display: block;
+		padding: 0 10px;
+		
+	}
+	
+	ul ul li {
+		clear: both;
+		background: #0A8D0E;
+		border: 2px solid #000000;
+	}
+	ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+	}
+	ul li:hover > ul {
+		display: inherit;
+	}
+	ul ul li {
+		min-width: 170px;
+		float: none;
+		display: list-item;
+		position: relative;
+	} 
+	.block {
+		width: 500px;
+		height: 140px;
+		background: #000000;
+		margin-top: 5px;
+	}
+	.color {
+		background: #EFECEC;
+		border: 2px solid #000000;
+		height: 100px;
+	}
+	.bg1 {
+		width: 100px;
+		float: right;
+		
+	}
+	.bg2 {
+		width: 90px;
+		float: right;
+		margin: 2px 100px 0px 0px;
+	}
+	.bg3 {
+		width: 70px;
+		float: right;
+		margin: 2px 90px 0px 0px;
+	}
+	.bg4 {
+		width: 50px;
+		float: right;
+		margin: 2px 70px 0px 0px;
+	}
+	.bg5 {
+		width: 35px;
+		float: right;
+		margin: 2px 50px 0px 0px;
+	}
+	.bg6 {
+		width: 25px;
+		float: right;
+		margin: 2px 35px 0px 0px;
+	}
+	.bg7 {
+		width: 15px;
+		float: right;
+		margin: 2px 25px 0px 0px;
+	}
+	.bg8 {
+		width: 10px;
+		float: right;
+		margin: 2px 15px 0px 0px;
+	}
+	.bg9 {
+		width: 5px;
+		float: right;
+		margin: 2px 10px 0px 0px;
+	}
+	.bg10 {
+		width: 60px;
+		float: right;
+		margin: 2px 5px 0px 0px;
+	}
+    .bg11 {
+        width: 100px;
+        float: left;
+    }
+    .bg12 {
+        width: 90px;
+        float: left;
+        margin: 2px 0px 0px 100px;
+    }
+    .bg13 {
+        width: 70px;
+        float: left;
+        margin: 2px 0px 0px 90px;
+    }
+    .bg14 {
+        width: 60px;
+        float: left;
+        margin: 2px 0px 0px 70px;
+    }
+   .bg15 {
+        width: 40px;
+        float: left;
+        margin: 2px 0px 0px 60px;
+    } 
+    .bg16 {
+        width: 20px;
+        float: left;
+        margin: 2px 0px 0px 40px;
+    }
+    .bg17 {
+        width: 15px;
+        float: left;
+        margin: 2px 0px 0px 20px;
+    }
+    .bg18 {
+        width: 10px;
+        float: left;
+        margin: 2px 0px 0px 15px;
+    }
+    .bg19 {
+        width: 5px;
+        float: left;
+        margin: 2px 0px 0px 10px;
+    }
+    .bg20 {
+        width: 60px;
+        float: left;
+        margin: 2px 0px 0px 5px;
+    }
+	.bg21 {
+		width: 50px;
+		float: left;
+	}
+	.bg22 {
+		width: 45px;
+		float: left;
+		margin: 2px 0px 0px 50px;
+	}
+	.bg23 {
+		width: 40px;
+		float: left;
+		margin: 2px 0px 0px 45px;
+	}
+	.bg24 {
+		width: 35px;
+		float: left;
+		margin: 2px 0px 0px 40px;
+	}
+	.bg25 {
+		width: 30px;
+		float: left;
+		margin: 2px 0px 0px 35px;
+	}
+	.bg26 {
+		width: 25px;
+		float: left;
+		margin: 2px 0px 0px 30px;
+	}
+	.bg27 {
+		width: 20px;
+		float: left;
+		margin: 2px 0px 0px 25px;
+	}
+	.bg28 {
+		width: 15px;
+		float: left;
+		margin: 2px 0px 0px 20px;
+	}
+	.bg29 {
+		width: 10px;
+		float: left;
+		margin: 2px 0px 0px 15px;
+	}
+	.bg30 {
+		width: 5px;
+		float: left;
+		margin: 2px 0px 0px 10px;
+	}
+	.bg31 {
+		width: 1px;
+		float: left;
+		margin: 2px 0px 0px 9px;
+	}
+	.bg32 {
+		width: 50px;
+		float: left;
+		margin: 2px 0px 0px 1px;
+	}
+	.bg33 {
+		width: 1px;
+		float: left;
+		margin: -2px 0px 0px 49px;
+	}
+	.bg34 {
+		width: 5px;
+		float: left;
+		margin: -4px 0px 0px 2px;
+	}
+	.bg35 {
+		width: 10px;
+		float: left;
+		margin: -6px 0px 0px 6px;
+	}
+	.bg36 {
+		width: 15px;
+		float: left;
+		margin: -8px 0px 0px 11px;
+	}
+	.bg37 {
+		width: 20px;
+		float: left;
+		margin: -10px 0px 0px 16px;
+	}
+	.bg38 {
+		width: 25px;
+		float: left;
+		margin: -8px 0px 0px 20px;
+	}
+	.bg39 {
+		width: 30px;
+		float: left;
+		margin: -8px 0px 0px 25px;
+	}
+	.bg40 {
+		width: 35px;
+		float: left;
+		margin: -8px 0px 0px 30px;
+	}
+	.bg41 {
+		width: 40px;
+		float: left;
+		margin: -8px 0px 0px 35px;
+	}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="">меню</a>
+        	<ul>
+        		<li><a href=""> подменю</a></li>
+        		<li><a href=""> подменю</a></li>
+        	</ul>
+        </li>
+        <li><a href="">меню</a>
+        	<ul>
+        		<li><a href=""> подменю</a></li>
+        		<li><a href=""> подменю</a></li>
+        	</ul>
+        </li>
+    </ul>
+    <div class="block">
+    	<div class="bg1 color">
+    		<div class="bg2 color">
+    			 <div class="bg3 color">
+    			 	<div class="bg4 color">
+    			 		<div class="bg5 color">
+    			 			<div class="bg6 color">
+    			 				<div class="bg7 color">
+    			 					<div class="bg8 color">
+    			 						<div class="bg9 color">
+    			 							<div class="bg10 color"></div>
+    			 						</div>
+    			 					</div>
+    			 				</div>
+    			 			</div>
+    			 		</div>
+    			 	</div>
+    			 </div>
+    		</div>
+    	</div>    	
+    </div>
+    <div class="block">
+        <div class="bg11 color">
+            <div class="bg12 color">
+                <div class="bg13 color">
+                    <div class="bg14 color">
+                        <div class="bg15 color">
+                             <div class="bg16 color">
+                                  <div class="bg17 color">
+                                       <div class="bg18 color">
+                                            <div class="bg19 color">
+                                                 <div class="bg20 color"></div>
+                                            </div>
+                                       </div>
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+    	<div class="bg21 color">
+    		<div class="bg22 color">
+    			<div class="bg23 color">
+    				<div class="bg24 color">
+    					<div class="bg25 color">
+    						<div class="bg26 color">
+    							<div class="bg27 color">
+    								<div class="bg28 color">
+    									<div class="bg29 color">
+    										<div class="bg30 color">
+    											<div class="bg31 color">
+    												<div class="bg32 color">
+    													<div class="bg33 color">
+    														<div class="bg34 color">
+    															<div class="bg35 color">
+    																<div class="bg36 color">
+    																	<div class="bg37 color">
+    																		<div class="bg38 color">
+    																			<div class="bg39 color">
+    																				<div class="bg40 color">
+    																					<div class="bg41 color"></div>
+    																				</div>
+    																			</div>
+    																		</div>
+    																	</div>
+    																</div>
+    															</div>
+    														</div>
+    													</div>
+    												</div>
+    											</div>
+    										</div>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

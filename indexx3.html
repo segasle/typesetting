@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>блоки</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: #00AEF4;
+	}
+	div {
+		float: left;
+		margin: 2px;
+	}
+	.figure1 {
+		content: '';
+		display: block;
+		width: 50px;
+		height: 0px;
+		border-bottom: 30px solid #FAF;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+	}
+	.figure2 {
+		content: '';
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-top: 25px solid #F12;
+		border-bottom: 35px solid #F12;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+	}
+	.figure3 {
+		content: '';
+		display: block;
+		width: 50px;
+		height: 100px;
+		background: #148436;
+		border-radius: 50% 50% 0px 0px
+	}
+	.figure4 {
+		content: '';
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-radius: 30px;
+		border: 30px solid #4D16CF;
+		border-right: 30px solid transparent;
+	}
+	.figure5 {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 0px;
+		border-left: 15px solid transparent;
+		border-top: 20px solid #F0D305;
+		border-bottom: 20px solid #F0D305;
+	}
+	.figure6 {
+		content: '';
+		display: block;
+		width: 0px;
+		height: 0px;
+	}
+    .figure7{
+        margin: 50px 0; 
+        height: 0; 
+        width: 0;
+        position: relative;
+        border-right: 10px solid transparent;
+        border-bottom: 2px solid #f0d305;
+        border-left: 10px solid transparent;
+        transform: rotate(35deg);
+    }
+    .figure7:before, .figure7:after {
+        content: "";
+        height: 0; 
+        width: 0;
+        position: absolute;
+    }
+    .figure7:before {
+top: 26px; left: 32px;
+border-bottom: 7px solid #f0d305;
+border-left: 1px solid transparent;
+border-right: 1px solid transparent;
+transform: rotate(-35deg);
+    }
+    .figure7:after {
+top: 2px; left: -53px;
+border-right: 50px solid transparent;
+border-bottom: 35px solid #E7337A;
+border-left: 50px solid transparent;
+transform: rotate(-70deg);
+    }
+</style>
+</head>
+<body>
+<div class="figure1"></div>
+<div class="figure2"></div>
+<div class="figure3"></div>
+<div class="figure4"></div>
+<div class="figure5"></div>
+<div class="figure6"></div>
+<div class="figure7"></div>
+</body>
+</html>

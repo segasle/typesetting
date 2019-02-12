@@ -1,0 +1,46 @@
+body {
+    background: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.meun {
+    background: #ffffff;
+    border: 10px solid black;
+    ul {
+        margin: 0 auto;
+        display: table;
+        padding: 0;
+        list-style: none;
+        li {
+            background: yellow;
+            padding: 0 20px;
+            float: left;
+            position: relative;
+            display: block;
+            line-height: 50px;
+            &:hover {
+                background: #ab6e30;
+            }
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 20px;
+                color: dodgerblue;
+            }
+            &:hover > ul {
+                display: table;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+        }
+        ul {
+            display: none;
+            li {
+                float: none;
+            }
+        }
+    }
+}
